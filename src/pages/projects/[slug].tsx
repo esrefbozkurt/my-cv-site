@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import { projects } from '@/data/projectsData';
+import { projectData } from '@/data/projectsData';
 import Head from 'next/head';
 import { useEffect, useState } from 'react';
 
@@ -7,11 +7,11 @@ export default function ProjectDetailPage() {
   const router = useRouter();
   const { query, isReady } = router;
 
-  const [project, setProject] = useState<(typeof projects)[0] | undefined>();
+  const [project, setProject] = useState<(typeof projectData)[0] | undefined>();
 
   useEffect(() => {
     if (isReady && typeof query.slug === 'string') {
-      const found = projects.find((p) => p.slug === query.slug);
+      const found = projectData.find((p) => p.slug === query.slug);
       setProject(found);
     }
   }, [isReady, query.slug]);

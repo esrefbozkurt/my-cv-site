@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { projects } from '@/data/projectsData';
+import { projectData } from '@/data/projectsData';
 import { motion } from 'framer-motion';
 
 export default function ProjectsPage() {
@@ -8,7 +8,7 @@ export default function ProjectsPage() {
       <h2 className="text-3xl font-bold text-center mb-10">Projekte</h2>
 
       <div className="grid md:grid-cols-2 gap-8">
-        {projects.map((proj, idx) => (
+        {projectData.map((proj, idx) => (
           <motion.div
             key={proj.slug}
             className="border rounded-lg p-5 shadow-sm hover:shadow-md transition-all bg-white dark:bg-neutral-900"
