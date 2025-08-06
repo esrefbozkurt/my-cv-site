@@ -21,7 +21,7 @@ Ich entwickle derzeit eine mobile Bewertungs-App mit React Native & Supabase. Pa
     title: 'Junior Frontend Developer @ PPW',
     slug: 'junior-dev-ppw',
     description:
-      'HTML, CSS, Vanilla, jQuerry, Vue 3, Vuetify, Accessibility & Designsysteme',
+      'HTML, CSS, Vanilla, jQuery, Vue 3, Vuetify, Accessibility & Designsysteme',
     details: `
 Entwicklung barrierefreier und nutzerfreundlicher Webanwendungen gemäß BITV-Standards.  
 Design-Systeme, Komponentenentwicklung (z. B. Kalender, Multi-Select), Performance-Optimierung und Debugging.  

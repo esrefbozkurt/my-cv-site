@@ -5,7 +5,7 @@ export type Project = {
   stack: string[];
   description: string;
   details: string;
-  link?: string;
+  link?: string | null;
 };
 
 export const projectData = [
