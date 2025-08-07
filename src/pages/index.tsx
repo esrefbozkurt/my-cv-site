@@ -2,7 +2,7 @@ export default function HomePage() {
   return (
     <section className="mt-16 space-y-8">
       <div className="text-center space-y-4">
-        <h2 className="text-4xl font-bold">Hi, ich bin Esref 👋</h2>
+        <h1 className="text-4xl font-bold">Hi, ich bin Esref 👋</h1>
         <p className="text-xl max-w-2xl mx-auto">
           Ich bin ein Frontend-Entwickler mit Fokus auf moderne Webtechnologien
           wie
