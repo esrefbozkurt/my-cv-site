@@ -15,13 +15,22 @@ export default function App({ Component, pageProps }: AppProps) {
           <div className="max-w-4xl mx-auto flex justify-between items-center">
             <div className="text-xl font-bold">esref.dev</div>
             <nav className="space-x-4">
-              <Link href="/" className="hover:underline">
+              <Link
+                href="/"
+                className="text-[var(--foreground)] underline-anim"
+              >
                 Start
               </Link>
-              <Link href="/timeline" className="hover:underline">
+              <Link
+                href="/timeline"
+                className="text-[var(--foreground)] underline-anim"
+              >
                 Werdegang
               </Link>
-              <Link href="/projects" className="hover:underline">
+              <Link
+                href="/projects"
+                className="text-[var(--foreground)] underline-anim"
+              >
                 Projekte
               </Link>
             </nav>

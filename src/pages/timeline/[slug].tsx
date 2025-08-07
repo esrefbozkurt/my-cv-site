@@ -1,7 +1,9 @@
-// pages/timeline/[slug].tsx
+
+
 import { GetStaticPaths, GetStaticPropsContext } from 'next';
 import Head from 'next/head';
-// import { useRouter } from 'next/router';
+
+
 import { timeline, TimelineEntry } from '@/data/timelineData';
 import Link from 'next/link';
 
@@ -10,7 +12,6 @@ export default function TimelineDetailPage({
 }: {
   entry: TimelineEntry;
 }) {
-  // const router = useRouter();
 
   return (
     <>
