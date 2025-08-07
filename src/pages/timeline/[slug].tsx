@@ -1,5 +1,9 @@
+
+
 import { GetStaticPaths, GetStaticPropsContext } from 'next';
 import Head from 'next/head';
+
+
 import { timeline, TimelineEntry } from '@/data/timelineData';
 import Link from 'next/link';
 
@@ -8,6 +12,7 @@ export default function TimelineDetailPage({
 }: {
   entry: TimelineEntry;
 }) {
+
   return (
     <>
       <Head>

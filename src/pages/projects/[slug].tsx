@@ -1,10 +1,12 @@
 // pages/projects/[slug].tsx
 import { GetStaticPaths, GetStaticPropsContext } from 'next';
 import Head from 'next/head';
+
 import { projectData, Project } from '@/data/projectsData';
 import Link from 'next/link';
 
 export default function ProjectDetailPage({ project }: { project: Project }) {
+
   return (
     <>
       <Head>
