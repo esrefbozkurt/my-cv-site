@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 export default function TimelinePage() {
   return (
     <section className="mt-16 space-y-10">
-      <h2 className="text-3xl font-bold text-center">Werdegang</h2>
+      <h1 className="text-3xl font-bold text-center">Werdegang</h1>
 
       <div className="relative border-l-2 border-gray-300 dark:border-gray-700 ml-4">
         {timeline.map((entry, idx) => (
