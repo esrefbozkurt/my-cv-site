@@ -27,7 +27,7 @@ body {
   .underline-anim::after {
     content: '';
     position: absolute;
-    bottom: -6px;
+    bottom: -8px;
     left: 0;
     width: 0%;
     height: 3px;

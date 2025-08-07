@@ -1,4 +1,3 @@
-// pages/timeline/[slug].tsx
 import { GetStaticPaths, GetStaticPropsContext } from 'next';
 import Head from 'next/head';
 import { timeline, TimelineEntry } from '@/data/timelineData';

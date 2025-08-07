@@ -1,4 +1,3 @@
-// src/components/Hero.tsx
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -15,7 +14,6 @@ export default function Hero() {
   return (
     <header className="bg-[var(--background)] text-[var(--foreground)] transition-colors py-16">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-8">
-        {/* Linke Spalte: vertikal zentrierter Text auf Desktop */}
         <div className="flex-1 flex flex-col justify-center md:h-full md:justify-center text-center md:text-left space-y-4">
           <h1 className="text-5xl font-extrabold">Esref Bozkurt</h1>
           <div className="flex flex-wrap justify-center md:justify-start gap-2">
@@ -30,7 +28,6 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Rechte Spalte: Bild bleibt wie es ist */}
         <div className="flex-1 flex justify-center md:justify-end">
           <div className="w-full max-w-xs rounded-full">
             <Image
@@ -44,7 +41,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Text unter dem Hero */}
       <div className="mt-8 text-center max-w-2xl mx-auto px-4 space-y-4">
         <p className="text-xl">
           Frontend-Developer mit Fokus auf moderne Web- und Mobile-Technologien.
