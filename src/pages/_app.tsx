@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)] transition-colors">
         <header className="w-full border-b border-gray-300 dark:border-gray-700 px-4 py-4">
           <div className="max-w-4xl mx-auto flex justify-between items-center">
-            <h1 className="text-xl font-bold">esref.dev</h1>
+            <div className="text-xl font-bold">esref.dev</div>
             <nav className="space-x-4">
               <Link href="/" className="hover:underline">
                 Start

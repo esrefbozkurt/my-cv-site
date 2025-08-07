@@ -1,11 +1,12 @@
 // pages/projects/[slug].tsx
 import { GetStaticPaths, GetStaticPropsContext } from 'next';
 import Head from 'next/head';
-import { useRouter } from 'next/router';
+// import { useRouter } from 'next/router';
 import { projectData, Project } from '@/data/projectsData';
+import Link from 'next/link';
 
 export default function ProjectDetailPage({ project }: { project: Project }) {
-  const router = useRouter();
+  // const router = useRouter();
 
   return (
     <>
@@ -44,12 +45,12 @@ export default function ProjectDetailPage({ project }: { project: Project }) {
           </a>
         )}
 
-        <button
-          onClick={() => router.back()}
+        <Link
+          href="/projects"
           className="mt-6 text-blue-600 hover:underline text-sm"
         >
           ← Zurück zur Übersicht
-        </button>
+        </Link>
       </section>
     </>
   );

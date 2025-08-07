@@ -1,15 +1,16 @@
 // pages/timeline/[slug].tsx
 import { GetStaticPaths, GetStaticPropsContext } from 'next';
 import Head from 'next/head';
-import { useRouter } from 'next/router';
+// import { useRouter } from 'next/router';
 import { timeline, TimelineEntry } from '@/data/timelineData';
+import Link from 'next/link';
 
 export default function TimelineDetailPage({
   entry,
 }: {
   entry: TimelineEntry;
 }) {
-  const router = useRouter();
+  // const router = useRouter();
 
   return (
     <>
@@ -23,12 +24,12 @@ export default function TimelineDetailPage({
           {entry.details}
         </p>
 
-        <button
-          onClick={() => router.back()}
+        <Link
+          href="/timeline"
           className="mt-6 text-blue-600 hover:underline text-sm"
         >
           ← Zurück zur Übersicht
-        </button>
+        </Link>
       </section>
     </>
   );
